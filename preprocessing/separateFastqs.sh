@@ -1,21 +1,17 @@
 #!/bin/bash
-# Sample name
-FASTQ_FILE=$1
-PLATFORM=$2
 
-function split_fastq {
-# LOOP OVER EACH LANE
-    for LANE in 1..4
+# This tool splits FASTQ files by lane
+# usage: separateFastqs.sh <input file>
+
+INPUT_FASTQ=$1
+FILENAME=$( basename "$INPUT_FASTQ" )
+
+for LANE in {1..4}
     do
-        zcat ${SAMPLE}_I1_001.fastq.gz | grep -A 3 \:$LANE\: | gzip > ${SAMPLE}_L00${LANE}_I1_001.fastq.gz
-        zcat ${SAMPLE}_R1_001.fastq.gz | grep -A 3 \:$LANE\: | gzip > ${SAMPLE}_L00${LANE}_R1_001.fastq.gz
-        zcat ${SAMPLE}_R2_001.fastq.gz | grep -A 3 \:$LANE\: | gzip > ${SAMPLE}_L00${LANE}_R2_001.fastq.gz
+        NEW_FILENAME=$( echo "$INPUT_FASTQ" | sed -E """s/(S[0-9])_([IR][1-2])/\1_LOO"${LANE}"_\2/g""" )
+        if [[ $INPUT_FASTQ == *"_Illumina_"* ]]; then
+            zcat ${INPUT_FASTQ} | grep -A 3 \:$LANE\: | gzip > ${NEW_FILENAME}
+        elif [[ $INPUT_FASTQ == *"_BGI_"* ]]; then
+            zcat ${INPUT_FASTQ} | grep -A 3 L${LANE} | gzip > ${NEW_FILENAME}
+        fi
     done
-}
-
-if [[  $PLATFORM == "Illumina" ]]; then
-    grep_expression="grep -A 3 \:1\:"
-elif [[ $SAMPLE == "BGI" ]]; then
-    grep_expression="grep -A 3 \:1\:"
-fi
-

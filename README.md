@@ -27,3 +27,11 @@ Data for each set of reads, from all lanes were combined into a single FASTQ fil
 #### Conversion of BGI-sequenced headers to Illumina-compatible headers
 The Cell Ranger pipeline requires FASTQ headers to be in an Illumina-compatible format. BGI headers are formatted differently, as described by the diagram below:
 
+![Elements of a BGI header](BGI_HeaderStructure.png)
+
+Headers from BGI files can be converted with the included Python script [convertHeaders.py](preprocessing/convertHeaders.py).
+
+Usage:
+```bash
+python 
+```

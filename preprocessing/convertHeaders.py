@@ -1,71 +1,86 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
+import sys
 import argparse
-import re
 import gzip
 
 # Rewrite as illumina header
-def convertIllumina(elements_dict, sample_index):
-    template_str = "@{instrument}:{run_number}:{flowcell_id}:{lane}:{tile}:{x_pos}:{y_pos} {read}:N:0:{sample_number}\n"
-    formatted_string = template_str.format(instrument = "MGISEQ2000",
-                                           run_number = 1,
+def convertIllumina(elements_dict):
+    template_str = "@{instrument}:{run_number}:{flowcell_id}:{lane}:{tile}:{x_pos}:{y_pos} {read}:N:0:{sample_barcode}\n"
+    formatted_string = template_str.format(instrument = elements_dict["instrument"],
+                                           run_number = elements_dict["run_number"],
                                            flowcell_id = elements_dict["flowcell-id"],
                                            lane = elements_dict["lane"],
                                            tile = elements_dict["tile"],
                                            x_pos = elements_dict["x-pos"],
                                            y_pos = elements_dict["y-pos"],
                                            read = elements_dict["read_no"],
-                                           sample_number = sample_index)
+                                           sample_barcode = elements_dict["sample_barcode"])
     return(formatted_string)
 
 
 # Collect elements from BGI format
-def parseBGI(header, sample_name):
-    # Get basic information from split
-    if "_" in header:
+# Please note that you will need to attach the sample barcode sequence 
+# to the headers of the input FASTQ file
+# eg. 
+def parseBGI(header):
+    # Extract sample barcode sequence
+    if header[-9] == "_":
+        # Get sample barcode
         header_split1 = header.split("_")
-        sample_id = header_split1[0]
-        sample_id = sample_id.replace("@", "")
-        header_split2 = header_split1[1].split("/")
-        paired_read_direction = (header_split2[1]).strip()
+        sample_barcode = header_split1[-1]
+        header = header.replace("_" + sample_barcode, "")
+
+        # Get basic information from split
+        # Takes into account presence of sample name
+        # Even if the sample name has underscores, it will take the
+        # last set of values which will be the header information
+        if "_" in header:
+            header = header.split("_")
+            header_split1 = header[-1]
+        else:
+            header_split1 = header
+        
+        header_split2 = header_split1.split("/")
+        paired_read_direction = int(header_split2[1])
+
+        # Get rest of the information from the header
         seq_header = header_split2[0]
-    else:
-        sample_id = sample_name
-        seq_header, paired_read_direction = header.split("/")
         seq_header = seq_header.replace("@", "")
-        paired_read_direction = paired_read_direction.strip()
 
-    # Get location of L (Lane number)
-    lane_id = re.search("L\d+", seq_header).group(0)
-    lane_id = int(lane_id.replace("L", ""))
+        # First 10 charcters of sequence header, after sample number
+        # are the flowcell number
+        flowcell_id = seq_header[:10]
+        
+        # Followed by flowcell 
+        lane_id = seq_header[10:12]
+        lane_id = int(lane_id.replace("L", ""))
+        
+        # Get location of C (x location)
+        x_id = seq_header[12:16]
+        x_id = int(x_id.replace("C", ""))
 
-    # Get location of C (x location)
-    x_id = re.search("C\d+", seq_header).group(0)
-    x_id = x_id[:4]
-    x_id = int(x_id.replace("C", ""))
+        # Get location of R (y location)
+        y_id = seq_header[16:20]
+        y_id = int(y_id.replace("R", ""))
 
-    # Get location of R (y location)
-    y_id = re.search("R\d+", seq_header).group(0)
-    # Shorten incase it's trailing
-    y_id = y_id[:4]
-    y_id = int(y_id.replace("R", ""))
+        # Get run number (last part of the string)
+        tile_number = int(seq_header[20:])
 
-    # Get run number (last part of the string)
-    tile_number = seq_header[seq_header.index("R")+4:]
+        # Pack into dictionary
+        elements_dict = {"instrument": "MGISEQ-2000", "run_number": 1, "sample_barcode": sample_barcode, "lane": lane_id, "x-pos": x_id, "y-pos": y_id, "tile": tile_number, "flowcell-id": flowcell_id, "read_no": paired_read_direction}
+        return elements_dict
 
-    # Get the device ID from the first part of the script
-    flowcell_id = seq_header[:seq_header.index("L")]
-
-    # Pack into dictionary
-    elements_dict = {"sample-id": sample_id, "lane": lane_id, "x-pos": x_id, "y-pos": y_id, "tile": int(tile_number), "flowcell-id": flowcell_id, "read_no": paired_read_direction}
-    return elements_dict
+    else:
+        print("Sample index barcode not detected. Please check you have attached the barcode with attachBarcodes.sh.")
+        sys.exit()
 
 # Parses the entry
-def parseLine(x, sample_name = "", sample_index = ""):
+def parseLine(x):
     if x.startswith("@"):
-        elements_dict = parseBGI(x, sample_name)
-        converted_header = convertIllumina(elements_dict, sample_index)
+        elements_dict = parseBGI(x)
+        converted_header = convertIllumina(elements_dict)
         return(converted_header)
     else:
         return(x)
@@ -82,11 +97,9 @@ def parseArguments(args):
     # Retrieve from parser
     input_file = args.input
     output_file = args.output
-    sample_name = args.sample_name
-
+  
     # Extract barcode from filename
-    sample_index = (os.path.basename(input_file)).split("_")[3]
-    return input_file, output_file, sample_name, sample_index
+    return input_file, output_file
 
 # Sets up arguments for user input
 def setupParser():
@@ -94,7 +107,6 @@ def setupParser():
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input", action = "store", help = "fastq.gz file generated by BGI platform.", type = str, required = True)
     parser.add_argument("-o", "--output", action = "store", help = "Name of output converted file.", type = str, required = True)
-    parser.add_argument("-s", "--sample_name", action = "store", type = "str", help = "Name of your sample.")
     args = parser.parse_args()
 
     return(args)
@@ -102,12 +114,12 @@ def setupParser():
 # Code starts here
 if __name__ == "__main__":
     args = setupParser()
-    input_file, output_file, sample_name, sample_index = parseArguments(args)
+    input_file, output_file = parseArguments(args)
     input_fastq = open_file(input_file, "rt")
     output_fastq = open_file(output_file, "wt")
 
     for line in input_fastq:
-        parsed_line = parseLine(line, sample_name = sample_name, sample_index = sample_index)
+        parsed_line = parseLine(line)
         output_fastq.write(parsed_line)
     
     input_fastq.close()

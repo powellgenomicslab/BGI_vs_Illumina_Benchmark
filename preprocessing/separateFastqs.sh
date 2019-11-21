@@ -13,5 +13,6 @@ for LANE in {1..4}
             zcat ${INPUT_FASTQ} | grep -A 3 \:$LANE\: | gzip > ${NEW_FILENAME}
         elif [[ $INPUT_FASTQ == *"_BGI_"* ]]; then
             zcat ${INPUT_FASTQ} | grep -A 3 L${LANE} | gzip > ${NEW_FILENAME}
+
         fi
     done

@@ -37,19 +37,25 @@ bash separateFastqs.sh BGIvsIllumina_iPSC_Illumina_S1_I1_001.fastq.gz
 bash separateFastqs.sh BGIvsIllumina_iPSC_BGI_S1_R1_001.fastq.gz
 ```
 
-#### Conversion of BGI-sequenced headers to Illumina-compatible headers
+### Conversion of BGI-sequenced headers to Illumina-compatible headers
 The Cell Ranger pipeline requires FASTQ headers to be in an Illumina-compatible format. BGI headers are formatted differently, as described by the diagram below:
 
 ![Elements of a BGI header](BGI_HeaderStructure.png)
+
+As sample indices weren't used for BGI sequencing, we added sample index barcodes to the BGI headers using [attachBarcodes.sh](preprocessing/attachBarcodes.sh). This is required for processing by the Cell Ranger pipeline.
 
 Headers from BGI files can be converted with the included Python script [convertHeaders.py](preprocessing/convertHeaders.py).
 
 Usage:
 ```bash
-python convertHeaders.py -i $INPUT_BGI_FASTQ -o $OUTPUT_BGI_FASTQ -s SAMPLE_NAME
+python convertHeaders.py -i $INPUT_BGI_FASTQ -o $OUTPUT_BGI_FASTQ
 ```
 
-Please note that it takes a day or two to reformat headers from an entire BGI flowcell. The `-s` argument is optional if the sample name has already been defined in
-the FASTQ file.
+Please note that it takes a day or two to reformat headers from an entire BGI flowcell. This will split the BGI file into four sets of files, one for each lane.
+
+### scRNA-seq Analysis
+
+
+
 
 

@@ -26,7 +26,7 @@ def convertIllumina(elements_dict):
 # eg. 
 def parseBGI(header):
     # Extract sample barcode sequence
-    if header[-9] == "_":
+    if header[-10] == "_":
         # Get sample barcode
         header_split1 = header.split("_")
         sample_barcode = header_split1[-1]

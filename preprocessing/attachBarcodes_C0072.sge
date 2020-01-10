@@ -1,6 +1,5 @@
-  #!/bin/bash
-
-#$ -q long.q
+#!/bin/bash
+#$ -q short.q
 #$ -S /bin/bash
 #$ -N C0072
 #$ -V
@@ -24,7 +23,7 @@ for N in {1..4}; do
     for M in {1..4}; do
         INPUT_FILE_R1=${BGI_SAMPLE_NAME}_L0${N}_${SAMPLE_NAME}_${M}_1.fq.gz
         INPUT_FILE_R2=${BGI_SAMPLE_NAME}_L0${N}_${SAMPLE_NAME}_${M}_2.fq.gz
-	    INDEX_NUMBER=$M
+	INDEX_NUMBER=$(( $M -1 ))
         BARCODE=${INDEX_BARCODES[$INDEX_NUMBER]}
         OUTPUT_FILE_R1=${NEW_SAMPLE_NAME}_${BARCODE}_L00${N}_R1.fastq.gz
         OUTPUT_FILE_R2=${NEW_SAMPLE_NAME}_${BARCODE}_L00${N}_R2.fastq.gz

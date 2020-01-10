@@ -1,0 +1,27 @@
+#!/bin/bash
+#$ -q short.q
+#$ -S /bin/bash
+#$ -N C0072
+#$ -V
+#$ -cwd
+#$ -b n
+#$ -l mem_requested=64G
+
+#INPUT_DIR=/share/ScratchGeneral/annsen/data/experimental_data/PROCESSING/OneK1K_scRNA
+TARGET_DIR=/directflow/SCCGGroupShare/projects/data/experimental_data/PUBLISHING/BGISeq_scRNA/RAW
+
+#cd $INPUT_DIR
+#FLOWCELL_ARRAY=( H7HTJDSXX H7KCWDSXX H7LJJDSXX H7LJTDSXX )
+
+#for FLOWCELL_ID in "${FLOWCELL_ARRAY[@]}" 
+#do
+#    INPUT_FLOWCELL_DIR=${INPUT_DIR}/${FLOWCELL_ID}/outs/fastq_path/OneK1K
+#    TARGET_FLOWCELL_DIR=${TARGET_DIR}/${FLOWCELL_ID}
+#    for N in {1..4}; do
+#	rsync -avz ${INPUT_FLOWCELL_DIR}/FD02929965_${N}/C0213_*.fastq.gz ${TARGET_FLOWCELL_DIR}/
+#	rsync -avz ${INPUT_FLOWCELL_DIR}/FD02929966_${N}/C0214_*.fastq.gz ${TARGET_FLOWCELL_DIR}/
+#    done
+#done
+
+rsync -avz /share/ScratchGeneral/annsen/data/experimental_data/PROCESSING/BGISeq_scRNA/HYM2KBGX9/outs/fastq_path/HYM2KBGX9/BGISeq_scRNA_Sample1_Illumina $TARGET_DIR
+

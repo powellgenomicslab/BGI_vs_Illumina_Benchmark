@@ -1,0 +1,452 @@
+sending incremental file list
+
+sent 406 bytes  received 12 bytes  836.00 bytes/sec
+total size is 3,685,435,945  speedup is 8,816,832.40
+sending incremental file list
+C0214_1_S217_L001_I1_001.fastq.gz
+C0214_1_S217_L001_R1_001.fastq.gz
+C0214_1_S217_L001_R2_001.fastq.gz
+C0214_1_S217_L002_I1_001.fastq.gz
+C0214_1_S217_L002_R1_001.fastq.gz
+C0214_1_S217_L002_R2_001.fastq.gz
+C0214_1_S217_L003_I1_001.fastq.gz
+C0214_1_S217_L003_R1_001.fastq.gz
+C0214_1_S217_L003_R2_001.fastq.gz
+C0214_1_S217_L004_I1_001.fastq.gz
+C0214_1_S217_L004_R1_001.fastq.gz
+C0214_1_S217_L004_R2_001.fastq.gz
+
+sent 2,937,669,362 bytes  received 244 bytes  27,845,209.54 bytes/sec
+total size is 2,939,672,241  speedup is 1.00
+sending incremental file list
+
+sent 406 bytes  received 12 bytes  836.00 bytes/sec
+total size is 2,640,304,964  speedup is 6,316,519.05
+sending incremental file list
+C0214_2_S218_L001_I1_001.fastq.gz
+C0214_2_S218_L001_R1_001.fastq.gz
+C0214_2_S218_L001_R2_001.fastq.gz
+C0214_2_S218_L002_I1_001.fastq.gz
+C0214_2_S218_L002_R1_001.fastq.gz
+C0214_2_S218_L002_R2_001.fastq.gz
+C0214_2_S218_L003_I1_001.fastq.gz
+C0214_2_S218_L003_R1_001.fastq.gz
+C0214_2_S218_L003_R2_001.fastq.gz
+C0214_2_S218_L004_I1_001.fastq.gz
+C0214_2_S218_L004_R1_001.fastq.gz
+C0214_2_S218_L004_R2_001.fastq.gz
+
+sent 4,416,233,662 bytes  received 244 bytes  27,345,101.59 bytes/sec
+total size is 4,420,003,908  speedup is 1.00
+sending incremental file list
+
+sent 406 bytes  received 12 bytes  836.00 bytes/sec
+total size is 2,750,196,554  speedup is 6,579,417.59
+sending incremental file list
+C0214_3_S219_L001_I1_001.fastq.gz
+C0214_3_S219_L001_R1_001.fastq.gz
+C0214_3_S219_L001_R2_001.fastq.gz
+C0214_3_S219_L002_I1_001.fastq.gz
+C0214_3_S219_L002_R1_001.fastq.gz
+C0214_3_S219_L002_R2_001.fastq.gz
+C0214_3_S219_L003_I1_001.fastq.gz
+C0214_3_S219_L003_R1_001.fastq.gz
+C0214_3_S219_L003_R2_001.fastq.gz
+C0214_3_S219_L004_I1_001.fastq.gz
+C0214_3_S219_L004_R1_001.fastq.gz
+C0214_3_S219_L004_R2_001.fastq.gz
+
+sent 2,872,353,384 bytes  received 244 bytes  29,160,950.54 bytes/sec
+total size is 2,874,207,540  speedup is 1.00
+sending incremental file list
+
+sent 406 bytes  received 12 bytes  836.00 bytes/sec
+total size is 3,522,639,557  speedup is 8,427,367.36
+sending incremental file list
+C0214_4_S220_L001_I1_001.fastq.gz
+C0214_4_S220_L001_R1_001.fastq.gz
+C0214_4_S220_L001_R2_001.fastq.gz
+C0214_4_S220_L002_I1_001.fastq.gz
+C0214_4_S220_L002_R1_001.fastq.gz
+C0214_4_S220_L002_R2_001.fastq.gz
+C0214_4_S220_L003_I1_001.fastq.gz
+C0214_4_S220_L003_R1_001.fastq.gz
+C0214_4_S220_L003_R2_001.fastq.gz
+C0214_4_S220_L004_I1_001.fastq.gz
+C0214_4_S220_L004_R1_001.fastq.gz
+C0214_4_S220_L004_R2_001.fastq.gz
+
+sent 2,813,637,844 bytes  received 244 bytes  29,462,178.93 bytes/sec
+total size is 2,815,954,954  speedup is 1.00
+sending incremental file list
+C0213_1_S213_L001_I1_001.fastq.gz
+C0213_1_S213_L001_R1_001.fastq.gz
+C0213_1_S213_L001_R2_001.fastq.gz
+C0213_1_S213_L002_I1_001.fastq.gz
+C0213_1_S213_L002_R1_001.fastq.gz
+C0213_1_S213_L002_R2_001.fastq.gz
+C0213_1_S213_L003_I1_001.fastq.gz
+C0213_1_S213_L003_R1_001.fastq.gz
+C0213_1_S213_L003_R2_001.fastq.gz
+C0213_1_S213_L004_I1_001.fastq.gz
+C0213_1_S213_L004_R1_001.fastq.gz
+C0213_1_S213_L004_R2_001.fastq.gz
+
+sent 3,499,924,464 bytes  received 244 bytes  28,570,813.94 bytes/sec
+total size is 3,502,577,530  speedup is 1.00
+sending incremental file list
+C0214_1_S217_L001_I1_001.fastq.gz
+C0214_1_S217_L001_R1_001.fastq.gz
+C0214_1_S217_L001_R2_001.fastq.gz
+C0214_1_S217_L002_I1_001.fastq.gz
+C0214_1_S217_L002_R1_001.fastq.gz
+C0214_1_S217_L002_R2_001.fastq.gz
+C0214_1_S217_L003_I1_001.fastq.gz
+C0214_1_S217_L003_R1_001.fastq.gz
+C0214_1_S217_L003_R2_001.fastq.gz
+C0214_1_S217_L004_I1_001.fastq.gz
+C0214_1_S217_L004_R1_001.fastq.gz
+C0214_1_S217_L004_R2_001.fastq.gz
+
+sent 2,799,236,922 bytes  received 244 bytes  30,592,755.91 bytes/sec
+total size is 2,801,432,168  speedup is 1.00
+sending incremental file list
+C0213_2_S214_L001_I1_001.fastq.gz
+C0213_2_S214_L001_R1_001.fastq.gz
+C0213_2_S214_L001_R2_001.fastq.gz
+C0213_2_S214_L002_I1_001.fastq.gz
+C0213_2_S214_L002_R1_001.fastq.gz
+C0213_2_S214_L002_R2_001.fastq.gz
+C0213_2_S214_L003_I1_001.fastq.gz
+C0213_2_S214_L003_R1_001.fastq.gz
+C0213_2_S214_L003_R2_001.fastq.gz
+C0213_2_S214_L004_I1_001.fastq.gz
+C0213_2_S214_L004_R1_001.fastq.gz
+C0213_2_S214_L004_R2_001.fastq.gz
+
+sent 2,499,324,569 bytes  received 244 bytes  30,666,562.12 bytes/sec
+total size is 2,501,061,280  speedup is 1.00
+sending incremental file list
+C0214_2_S218_L001_I1_001.fastq.gz
+C0214_2_S218_L001_R1_001.fastq.gz
+C0214_2_S218_L001_R2_001.fastq.gz
+C0214_2_S218_L002_I1_001.fastq.gz
+C0214_2_S218_L002_R1_001.fastq.gz
+C0214_2_S218_L002_R2_001.fastq.gz
+C0214_2_S218_L003_I1_001.fastq.gz
+C0214_2_S218_L003_R1_001.fastq.gz
+C0214_2_S218_L003_R2_001.fastq.gz
+C0214_2_S218_L004_I1_001.fastq.gz
+C0214_2_S218_L004_R1_001.fastq.gz
+C0214_2_S218_L004_R2_001.fastq.gz
+
+sent 4,189,344,914 bytes  received 244 bytes  30,917,676.44 bytes/sec
+total size is 4,193,379,665  speedup is 1.00
+sending incremental file list
+C0213_3_S215_L001_I1_001.fastq.gz
+C0213_3_S215_L001_R1_001.fastq.gz
+C0213_3_S215_L001_R2_001.fastq.gz
+C0213_3_S215_L002_I1_001.fastq.gz
+C0213_3_S215_L002_R1_001.fastq.gz
+C0213_3_S215_L002_R2_001.fastq.gz
+C0213_3_S215_L003_I1_001.fastq.gz
+C0213_3_S215_L003_R1_001.fastq.gz
+C0213_3_S215_L003_R2_001.fastq.gz
+C0213_3_S215_L004_I1_001.fastq.gz
+C0213_3_S215_L004_R1_001.fastq.gz
+C0213_3_S215_L004_R2_001.fastq.gz
+
+sent 2,609,166,434 bytes  received 244 bytes  29,819,047.75 bytes/sec
+total size is 2,611,102,315  speedup is 1.00
+sending incremental file list
+
+sent 394 bytes  received 12 bytes  812.00 bytes/sec
+total size is 2,742,500,242  speedup is 6,754,926.70
+sending incremental file list
+C0213_4_S216_L001_I1_001.fastq.gz
+C0213_4_S216_L001_R1_001.fastq.gz
+C0213_4_S216_L001_R2_001.fastq.gz
+C0213_4_S216_L002_I1_001.fastq.gz
+C0213_4_S216_L002_R1_001.fastq.gz
+C0213_4_S216_L002_R2_001.fastq.gz
+C0213_4_S216_L003_I1_001.fastq.gz
+C0213_4_S216_L003_R1_001.fastq.gz
+C0213_4_S216_L003_R2_001.fastq.gz
+C0213_4_S216_L004_I1_001.fastq.gz
+C0213_4_S216_L004_R1_001.fastq.gz
+C0213_4_S216_L004_R2_001.fastq.gz
+
+sent 3,343,164,962 bytes  received 244 bytes  30,531,189.10 bytes/sec
+total size is 3,348,450,781  speedup is 1.00
+sending incremental file list
+C0214_4_S220_L001_I1_001.fastq.gz
+C0214_4_S220_L001_R1_001.fastq.gz
+C0214_4_S220_L001_R2_001.fastq.gz
+C0214_4_S220_L002_I1_001.fastq.gz
+C0214_4_S220_L002_R1_001.fastq.gz
+C0214_4_S220_L002_R2_001.fastq.gz
+C0214_4_S220_L003_I1_001.fastq.gz
+C0214_4_S220_L003_R1_001.fastq.gz
+C0214_4_S220_L003_R2_001.fastq.gz
+C0214_4_S220_L004_I1_001.fastq.gz
+C0214_4_S220_L004_R1_001.fastq.gz
+C0214_4_S220_L004_R2_001.fastq.gz
+
+sent 2,671,715,771 bytes  received 244 bytes  29,521,723.92 bytes/sec
+total size is 2,674,121,913  speedup is 1.00
+sending incremental file list
+C0213_1_S213_L001_I1_001.fastq.gz
+C0213_1_S213_L001_R1_001.fastq.gz
+C0213_1_S213_L001_R2_001.fastq.gz
+C0213_1_S213_L002_I1_001.fastq.gz
+C0213_1_S213_L002_R1_001.fastq.gz
+C0213_1_S213_L002_R2_001.fastq.gz
+C0213_1_S213_L003_I1_001.fastq.gz
+C0213_1_S213_L003_R1_001.fastq.gz
+C0213_1_S213_L003_R2_001.fastq.gz
+C0213_1_S213_L004_I1_001.fastq.gz
+C0213_1_S213_L004_R1_001.fastq.gz
+C0213_1_S213_L004_R2_001.fastq.gz
+
+sent 3,407,459,396 bytes  received 244 bytes  30,560,176.14 bytes/sec
+total size is 3,409,258,248  speedup is 1.00
+sending incremental file list
+C0214_1_S217_L001_I1_001.fastq.gz
+C0214_1_S217_L001_R1_001.fastq.gz
+C0214_1_S217_L001_R2_001.fastq.gz
+C0214_1_S217_L002_I1_001.fastq.gz
+C0214_1_S217_L002_R1_001.fastq.gz
+C0214_1_S217_L002_R2_001.fastq.gz
+C0214_1_S217_L003_I1_001.fastq.gz
+C0214_1_S217_L003_R1_001.fastq.gz
+C0214_1_S217_L003_R2_001.fastq.gz
+C0214_1_S217_L004_I1_001.fastq.gz
+C0214_1_S217_L004_R1_001.fastq.gz
+C0214_1_S217_L004_R2_001.fastq.gz
+
+sent 2,724,291,573 bytes  received 244 bytes  20,406,680.28 bytes/sec
+total size is 2,726,007,015  speedup is 1.00
+sending incremental file list
+C0213_2_S214_L001_I1_001.fastq.gz
+C0213_2_S214_L001_R1_001.fastq.gz
+C0213_2_S214_L001_R2_001.fastq.gz
+C0213_2_S214_L002_I1_001.fastq.gz
+C0213_2_S214_L002_R1_001.fastq.gz
+C0213_2_S214_L002_R2_001.fastq.gz
+C0213_2_S214_L003_I1_001.fastq.gz
+C0213_2_S214_L003_R1_001.fastq.gz
+C0213_2_S214_L003_R2_001.fastq.gz
+C0213_2_S214_L004_I1_001.fastq.gz
+C0213_2_S214_L004_R1_001.fastq.gz
+C0213_2_S214_L004_R2_001.fastq.gz
+
+sent 2,445,189,678 bytes  received 244 bytes  10,471,905.45 bytes/sec
+total size is 2,446,439,708  speedup is 1.00
+sending incremental file list
+C0214_2_S218_L001_I1_001.fastq.gz
+C0214_2_S218_L001_R1_001.fastq.gz
+C0214_2_S218_L001_R2_001.fastq.gz
+C0214_2_S218_L002_I1_001.fastq.gz
+C0214_2_S218_L002_R1_001.fastq.gz
+C0214_2_S218_L002_R2_001.fastq.gz
+C0214_2_S218_L003_I1_001.fastq.gz
+C0214_2_S218_L003_R1_001.fastq.gz
+C0214_2_S218_L003_R2_001.fastq.gz
+C0214_2_S218_L004_I1_001.fastq.gz
+C0214_2_S218_L004_R1_001.fastq.gz
+C0214_2_S218_L004_R2_001.fastq.gz
+
+sent 4,086,500,548 bytes  received 244 bytes  10,970,471.92 bytes/sec
+total size is 4,089,756,717  speedup is 1.00
+sending incremental file list
+C0213_3_S215_L001_I1_001.fastq.gz
+C0213_3_S215_L001_R1_001.fastq.gz
+C0213_3_S215_L001_R2_001.fastq.gz
+C0213_3_S215_L002_I1_001.fastq.gz
+C0213_3_S215_L002_R1_001.fastq.gz
+C0213_3_S215_L002_R2_001.fastq.gz
+C0213_3_S215_L003_I1_001.fastq.gz
+C0213_3_S215_L003_R1_001.fastq.gz
+C0213_3_S215_L003_R2_001.fastq.gz
+C0213_3_S215_L004_I1_001.fastq.gz
+C0213_3_S215_L004_R1_001.fastq.gz
+C0213_3_S215_L004_R2_001.fastq.gz
+
+sent 2,574,492,022 bytes  received 244 bytes  11,169,163.84 bytes/sec
+total size is 2,575,752,095  speedup is 1.00
+sending incremental file list
+C0214_3_S219_L001_I1_001.fastq.gz
+C0214_3_S219_L001_R1_001.fastq.gz
+C0214_3_S219_L001_R2_001.fastq.gz
+C0214_3_S219_L002_I1_001.fastq.gz
+C0214_3_S219_L002_R1_001.fastq.gz
+C0214_3_S219_L002_R2_001.fastq.gz
+C0214_3_S219_L003_I1_001.fastq.gz
+C0214_3_S219_L003_R1_001.fastq.gz
+C0214_3_S219_L003_R2_001.fastq.gz
+C0214_3_S219_L004_I1_001.fastq.gz
+C0214_3_S219_L004_R1_001.fastq.gz
+C0214_3_S219_L004_R2_001.fastq.gz
+
+sent 2,653,790,694 bytes  received 244 bytes  11,127,006.03 bytes/sec
+total size is 2,655,292,905  speedup is 1.00
+sending incremental file list
+C0213_4_S216_L001_I1_001.fastq.gz
+C0213_4_S216_L001_R1_001.fastq.gz
+C0213_4_S216_L001_R2_001.fastq.gz
+C0213_4_S216_L002_I1_001.fastq.gz
+C0213_4_S216_L002_R1_001.fastq.gz
+C0213_4_S216_L002_R2_001.fastq.gz
+C0213_4_S216_L003_I1_001.fastq.gz
+C0213_4_S216_L003_R1_001.fastq.gz
+C0213_4_S216_L003_R2_001.fastq.gz
+C0213_4_S216_L004_I1_001.fastq.gz
+C0213_4_S216_L004_R1_001.fastq.gz
+C0213_4_S216_L004_R2_001.fastq.gz
+
+sent 3,234,281,964 bytes  received 244 bytes  10,908,203.06 bytes/sec
+total size is 3,238,424,014  speedup is 1.00
+sending incremental file list
+C0214_4_S220_L001_I1_001.fastq.gz
+C0214_4_S220_L001_R1_001.fastq.gz
+C0214_4_S220_L001_R2_001.fastq.gz
+C0214_4_S220_L002_I1_001.fastq.gz
+C0214_4_S220_L002_R1_001.fastq.gz
+C0214_4_S220_L002_R2_001.fastq.gz
+C0214_4_S220_L003_I1_001.fastq.gz
+C0214_4_S220_L003_R1_001.fastq.gz
+C0214_4_S220_L003_R2_001.fastq.gz
+C0214_4_S220_L004_I1_001.fastq.gz
+C0214_4_S220_L004_R1_001.fastq.gz
+C0214_4_S220_L004_R2_001.fastq.gz
+
+sent 2,606,342,874 bytes  received 244 bytes  10,616,468.91 bytes/sec
+total size is 2,608,338,479  speedup is 1.00
+sending incremental file list
+C0213_1_S213_L001_I1_001.fastq.gz
+C0213_1_S213_L001_R1_001.fastq.gz
+C0213_1_S213_L001_R2_001.fastq.gz
+C0213_1_S213_L002_I1_001.fastq.gz
+C0213_1_S213_L002_R1_001.fastq.gz
+C0213_1_S213_L002_R2_001.fastq.gz
+C0213_1_S213_L003_I1_001.fastq.gz
+C0213_1_S213_L003_R1_001.fastq.gz
+C0213_1_S213_L003_R2_001.fastq.gz
+C0213_1_S213_L004_I1_001.fastq.gz
+C0213_1_S213_L004_R1_001.fastq.gz
+C0213_1_S213_L004_R2_001.fastq.gz
+
+sent 3,651,751,791 bytes  received 244 bytes  10,359,580.24 bytes/sec
+total size is 3,654,425,290  speedup is 1.00
+sending incremental file list
+C0214_1_S217_L001_I1_001.fastq.gz
+C0214_1_S217_L001_R1_001.fastq.gz
+C0214_1_S217_L001_R2_001.fastq.gz
+C0214_1_S217_L002_I1_001.fastq.gz
+C0214_1_S217_L002_R1_001.fastq.gz
+C0214_1_S217_L002_R2_001.fastq.gz
+C0214_1_S217_L003_I1_001.fastq.gz
+C0214_1_S217_L003_R1_001.fastq.gz
+C0214_1_S217_L003_R2_001.fastq.gz
+C0214_1_S217_L004_I1_001.fastq.gz
+C0214_1_S217_L004_R1_001.fastq.gz
+C0214_1_S217_L004_R2_001.fastq.gz
+
+sent 2,914,890,145 bytes  received 244 bytes  10,034,046.09 bytes/sec
+total size is 2,917,015,654  speedup is 1.00
+sending incremental file list
+C0213_2_S214_L001_I1_001.fastq.gz
+C0213_2_S214_L001_R1_001.fastq.gz
+C0213_2_S214_L001_R2_001.fastq.gz
+C0213_2_S214_L002_I1_001.fastq.gz
+C0213_2_S214_L002_R1_001.fastq.gz
+C0213_2_S214_L002_R2_001.fastq.gz
+C0213_2_S214_L003_I1_001.fastq.gz
+C0213_2_S214_L003_R1_001.fastq.gz
+C0213_2_S214_L003_R2_001.fastq.gz
+C0213_2_S214_L004_I1_001.fastq.gz
+C0213_2_S214_L004_R1_001.fastq.gz
+C0213_2_S214_L004_R2_001.fastq.gz
+
+sent 2,687,275,252 bytes  received 244 bytes  10,946,132.37 bytes/sec
+total size is 2,689,153,478  speedup is 1.00
+sending incremental file list
+C0214_2_S218_L001_I1_001.fastq.gz
+C0214_2_S218_L001_R1_001.fastq.gz
+C0214_2_S218_L001_R2_001.fastq.gz
+C0214_2_S218_L002_I1_001.fastq.gz
+C0214_2_S218_L002_R1_001.fastq.gz
+C0214_2_S218_L002_R2_001.fastq.gz
+C0214_2_S218_L003_I1_001.fastq.gz
+C0214_2_S218_L003_R1_001.fastq.gz
+C0214_2_S218_L003_R2_001.fastq.gz
+C0214_2_S218_L004_I1_001.fastq.gz
+C0214_2_S218_L004_R1_001.fastq.gz
+C0214_2_S218_L004_R2_001.fastq.gz
+
+sent 4,353,544,286 bytes  received 244 bytes  10,816,259.70 bytes/sec
+total size is 4,357,463,232  speedup is 1.00
+sending incremental file list
+C0213_3_S215_L001_I1_001.fastq.gz
+C0213_3_S215_L001_R1_001.fastq.gz
+C0213_3_S215_L001_R2_001.fastq.gz
+C0213_3_S215_L002_I1_001.fastq.gz
+C0213_3_S215_L002_R1_001.fastq.gz
+C0213_3_S215_L002_R2_001.fastq.gz
+C0213_3_S215_L003_I1_001.fastq.gz
+C0213_3_S215_L003_R1_001.fastq.gz
+C0213_3_S215_L003_R2_001.fastq.gz
+C0213_3_S215_L004_I1_001.fastq.gz
+C0213_3_S215_L004_R1_001.fastq.gz
+C0213_3_S215_L004_R2_001.fastq.gz
+
+sent 2,749,695,490 bytes  received 244 bytes  10,240,952.45 bytes/sec
+total size is 2,751,538,608  speedup is 1.00
+sending incremental file list
+C0214_3_S219_L001_I1_001.fastq.gz
+C0214_3_S219_L001_R1_001.fastq.gz
+C0214_3_S219_L001_R2_001.fastq.gz
+C0214_3_S219_L002_I1_001.fastq.gz
+C0214_3_S219_L002_R1_001.fastq.gz
+C0214_3_S219_L002_R2_001.fastq.gz
+C0214_3_S219_L003_I1_001.fastq.gz
+C0214_3_S219_L003_R1_001.fastq.gz
+C0214_3_S219_L003_R2_001.fastq.gz
+C0214_3_S219_L004_I1_001.fastq.gz
+C0214_3_S219_L004_R1_001.fastq.gz
+C0214_3_S219_L004_R2_001.fastq.gz
+
+sent 2,866,374,277 bytes  received 244 bytes  10,836,954.71 bytes/sec
+total size is 2,868,423,699  speedup is 1.00
+sending incremental file list
+C0213_4_S216_L001_I1_001.fastq.gz
+C0213_4_S216_L001_R1_001.fastq.gz
+C0213_4_S216_L001_R2_001.fastq.gz
+C0213_4_S216_L002_I1_001.fastq.gz
+C0213_4_S216_L002_R1_001.fastq.gz
+C0213_4_S216_L002_R2_001.fastq.gz
+C0213_4_S216_L003_I1_001.fastq.gz
+C0213_4_S216_L003_R1_001.fastq.gz
+C0213_4_S216_L003_R2_001.fastq.gz
+C0213_4_S216_L004_I1_001.fastq.gz
+C0213_4_S216_L004_R1_001.fastq.gz
+C0213_4_S216_L004_R2_001.fastq.gz
+
+sent 3,505,845,869 bytes  received 244 bytes  10,480,855.35 bytes/sec
+total size is 3,510,866,225  speedup is 1.00
+sending incremental file list
+C0214_4_S220_L001_I1_001.fastq.gz
+C0214_4_S220_L001_R1_001.fastq.gz
+C0214_4_S220_L001_R2_001.fastq.gz
+C0214_4_S220_L002_I1_001.fastq.gz
+C0214_4_S220_L002_R1_001.fastq.gz
+C0214_4_S220_L002_R2_001.fastq.gz
+C0214_4_S220_L003_I1_001.fastq.gz
+C0214_4_S220_L003_R1_001.fastq.gz
+C0214_4_S220_L003_R2_001.fastq.gz
+C0214_4_S220_L004_I1_001.fastq.gz
+C0214_4_S220_L004_R1_001.fastq.gz
+C0214_4_S220_L004_R2_001.fastq.gz
+
+sent 2,765,677,803 bytes  received 244 bytes  9,391,096.93 bytes/sec
+total size is 2,768,133,830  speedup is 1.00

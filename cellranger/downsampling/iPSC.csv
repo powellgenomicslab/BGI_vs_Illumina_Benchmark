@@ -1,0 +1,3 @@
+library_id,molecule_h5
+iPSC_Illumina,/share/ScratchGeneral/annsen/data/experimental_data/CLEAN/BGISeq_scRNA/iPSC_Illumina/outs/molecule_info.h5
+iPSC_BGI,/share/ScratchGeneral/annsen/data/experimental_data/CLEAN/BGISeq_scRNA/iPSC_BGI/outs/molecule_info.h5

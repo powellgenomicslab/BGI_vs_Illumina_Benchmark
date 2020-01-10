@@ -1,0 +1,3 @@
+library_id,molecule_h5
+C0213_Illumina,/shares/powell/data/experimental_data/CLEAN/OneK1K_scRNA/OneK1K_scRNA_Sample54_V2/outs/molecule_info.h5
+C0213_BGI,/shares/powell/data/experimental_data/CLEAN/BGISeq_scRNA/BGISeq_scRNA_Sample3/outs/molecule_info.h5

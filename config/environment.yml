@@ -9,4 +9,3 @@ dependencies:
   - samtools
   - pysam
   - pandas
-prefix: /share/ClusterShare/software/contrib/sccg/miniconda3/envs/BGISeq_scRNA

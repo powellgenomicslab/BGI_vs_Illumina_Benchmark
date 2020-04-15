@@ -74,11 +74,6 @@ All prepared sequencing data was run through the Cell Ranger *count* v2.2.0 pipe
 #### Depth equalization and subsampling
 BGI-sequenced data were subsampled to the depth of the corresponding Illumina-sequenced dataset through the Cell Ranger *aggr* v2.2.0 pipeline using the scripts found [here](cellranger/downsampling/). Illumina and BGI datasets were also downsampled further to a total read depth of 100,000 reads per sample using the [DropletUtils][1] R package. The scripts can be found [here](analysis/downsampling/).
 
-#### Quality control with Seurat
-
-#### Experiment-specific analysis 
-
-
 [1]: https://bioconductor.org/packages/release/bioc/html/DropletUtils.html "DropletUtils R Package"
 
 

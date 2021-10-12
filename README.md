@@ -16,7 +16,7 @@ Anne Senabouth, Stacey Andersen, Qianyu Shi, Lei Shi, Feng Jiang, Wenwei Zhang, 
 | PBMC2  | NovaSeq 6000, MGISEQ-2000 | SI-GA-F2     | 20,000                    | 10x Genomics Chromium Single Cell 3' (v2) | Homo sapiens | GRCh38           | Peripheral Blood Mononuclear Cells collected from pools of donors                  |
 
 ## Data repository
-Raw and processed data for both platforms are available via ArrayExpress ().
+Raw and processed data for both platforms are available via ArrayExpress [E-MTAB-9024](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-9024/).
 
 ## Pre-processing
 ### Illumina datasets
